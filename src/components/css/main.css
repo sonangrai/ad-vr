@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+:root {
+  --primary-color: #7b2cbf;
+  --secondary-color: #c77dff;
+}
+body {
+  font-family: "Mukta", sans-serif;
+}
+a,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.dflex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn {
+  border: 0;
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: var(--primary-color);
+  color: #fff;
+}

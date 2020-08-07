@@ -1,0 +1,16 @@
+.alertmodel {
+  position: absolute;
+  background: var(--secondary-color);
+  right: 2%;
+  width: 20%;
+  border-radius: 4px;
+  padding: 1em;
+  top: 25%;
+}
+.alertmodel h2 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}

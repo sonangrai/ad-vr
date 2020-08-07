@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+body {
+  font-family: "Mulish", sans-serif;
+}
+div#root {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+}
+.iform {
+  padding: 1em;
+}
+.mrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+.full {
+  width: 100%;
+}
+img {
+  max-width: 30px;
+}
+.card {
+  padding: 1em;
+}
+span.danger {
+  background: #ff5757;
+  padding: 0.5em;
+  color: #fff;
+  border-radius: 4px;
+  transition: 0.3s;
+  opacity: 1;
+  margin: 1em 0;
+  display: block;
+}
