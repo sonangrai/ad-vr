@@ -15,3 +15,8 @@ a.logo {
 .leftpart {
   align-items: center;
 }
+.footer {
+  text-align: center;
+  border-top: 1px solid #000;
+  padding: 1em;
+}
