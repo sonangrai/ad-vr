@@ -1,0 +1,10 @@
+.loader {
+  height: 10px;
+  background-color: red;
+  transition: 0.5s;
+}
+img.upimg {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+}
