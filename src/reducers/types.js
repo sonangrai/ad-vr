@@ -10,6 +10,8 @@ export const ACCOUNT_DELETED = "ACCOUNT_DELETED";
 
 export const ADS_ADDED = "ADS_ADDED";
 export const ADS_ADD_FAIL = "ADS_ADD_FAIL";
+export const ADS_FETCH = "ADS_FETCH";
+export const ADS_FETCH_FAIL = "ADS_FETCH_FAIL";
 
 export const SET_ALERT = "SET_ALERT";
 export const REMOVE_ALERT = "REMOVE_ALERT";

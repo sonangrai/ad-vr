@@ -1,0 +1,26 @@
+.lginf,
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.lginf span {
+  border: 1px solid var(--secondary-color);
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 1em;
+  color: var(--secondary-color);
+}
+.aditem img {
+  width: 100%;
+}
+.aditem span {
+  display: block;
+  font-weight: 900;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+.aditem p {
+  font-size: 0.8em;
+}

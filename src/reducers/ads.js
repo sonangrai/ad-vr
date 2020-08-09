@@ -11,9 +11,15 @@ export default function (state = initialState, action) {
     case types.ADS_ADDED:
       return {
         ...state,
-        user: payload,
+        ads: payload,
+      };
+    case types.ADS_FETCH:
+      return {
+        ...state,
+        ads: payload,
       };
     case types.ADS_ADD_FAIL:
+    case types.ADS_FETCH_FAIL:
       return {
         ...state,
       };
