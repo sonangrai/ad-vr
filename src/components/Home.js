@@ -5,6 +5,7 @@ import "./css/main.css";
 import "./css/home.css";
 
 import { getdata } from "../actions/ads";
+import Model from "./Ads/Model";
 
 const Home = ({ auth, getdata, ads }) => {
   useEffect(() => {
@@ -17,15 +18,23 @@ const Home = ({ auth, getdata, ads }) => {
         <div className="row">
           {auth.isAuthenticated === true && ads !== null ? (
             <Fragment>
-              {ads.map((ad) => (
-                <div className="col-lg-4">
-                  <div className="aditem">
-                    <img src={ad.imgurl} alt={ad.id} />
-                    <span>{ad.title}</span>
-                    <p>{ad.description}</p>
+              {ads.map((ad) =>
+                ad.uid === auth.user.sub ? (
+                  <div
+                    className="col-lg-4"
+                    key={ad.id}
+                    data-toggle="modal"
+                    data-target={`#` + ad.id}
+                  >
+                    <div className="aditem">
+                      <img src={ad.imgurl} alt={ad.id} />
+                      <span>{ad.title}</span>
+                      <p>{ad.description}</p>
+                      <Model data={ad} target={ad.id} />
+                    </div>
                   </div>
-                </div>
-              ))}
+                ) : null
+              )}
               <div className="col-12">
                 <Link to="/addads" className="btn">
                   Add Ads

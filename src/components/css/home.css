@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
+  padding: 3em 0;
 }
 .lginf span {
   border: 1px solid var(--secondary-color);
@@ -11,6 +12,9 @@
   text-transform: uppercase;
   padding: 1em;
   color: var(--secondary-color);
+}
+.aditem {
+  cursor: pointer;
 }
 .aditem img {
   width: 100%;
